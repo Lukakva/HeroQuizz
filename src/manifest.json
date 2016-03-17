@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+
+    "name": "HeroQuizz Cheater",
+    "description": "Don't want your friend to get upset about your for not scoring high score in his HeroQuizz test? This extension will solve that provlem for you",
+    "version": "0.1",
+
+    "permissions": [
+        "*://*.heroquizz.com/*",
+        "tabs",
+        "activeTab"
+    ],
+    "icons": { 
+		"16": "icons/16.png",
+		"32": "icons/32.png",
+		"48": "icons/48.png",
+		"64": "icons/64.png",
+     	"128": "icons/128.png",
+     	"256": "icons/256.png"
+    },
+    "browser_action": {
+    	"default_icon": {
+    		"16": "icons/16.png",
+    		"32": "icons/32.png",
+    		"48": "icons/48.png",
+			"64": "icons/64.png",
+	     	"128": "icons/128.png",
+	     	"256": "icons/256.png"
+	    },
+	    "default_title": "Start Cheating",
+	    "default_popup": "index.html"
+    },
+    "content_scripts": [{
+    	"matches": ["*://*.heroquizz.com/*"],
+    	"js": ["js/jquery.js", "js/listener.js"],
+    	"run_at": "document_end"
+	}]
+}

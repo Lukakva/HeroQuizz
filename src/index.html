@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	html, body {
+		height: 200px;
+		width: 400px;
+		margin: 0;
+		background: lightgrey;
+		font-family: Helvetica, Arial;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	#start-container {
+		width: 90%;
+		text-align: center;
+	}
+
+	#start-button {
+		padding: 2px 5px;
+		text-align: center;
+		border: 2px solid rgb(50, 100, 180);
+		background: rgb(70, 116, 204);
+		outline: none;
+		font-size: 25px;
+		color: white;
+	}
+
+	#start-button:hover {
+		border-color: rgb(70, 116, 204);
+		background: rgb(90, 130, 224);
+	}
+
+	#start-button:active {
+		border-color: rgb(30, 80, 160);
+		background: rgb(50, 100, 180);
+	}
+
+	.error {
+		display: none;
+		color: rgb(255, 50, 50);
+		width: 80%;
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+	}
+
+</style>
+<body>
+	<div id="start-container" class="center">
+		<button id="start-button">Start Cheating</button>
+	</div>
+	<div class="center error">Please go to heroquizz website and start a friend's quiz</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
